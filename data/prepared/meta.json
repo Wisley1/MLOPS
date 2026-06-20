@@ -1,0 +1,23 @@
+{
+  "topics": [
+    "art",
+    "computer vision",
+    "food",
+    "games",
+    "medicine",
+    "microbiome",
+    "physics",
+    "transformers"
+  ],
+  "topic_to_id": {
+    "art": 0,
+    "computer vision": 1,
+    "food": 2,
+    "games": 3,
+    "medicine": 4,
+    "microbiome": 5,
+    "physics": 6,
+    "transformers": 7
+  },
+  "num_classes": 8
+}
