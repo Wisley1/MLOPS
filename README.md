@@ -23,7 +23,7 @@ Credentials — в `~/clearml.conf` (Settings → Workspace → Create new crede
 
 ## Пайплайн
 
-**1. Датасет** — нужен весь CSV, не первые 3000 строк:
+**1. Датасет**:
 
 ```bash
 python -m src.upload_dataset \
@@ -33,9 +33,9 @@ python -m src.upload_dataset \
   --dataset-version 2.0
 ```
 
-Сохраните `dataset_id` из вывода.
 
-**2. Обучение** (agent должен быть запущен):
+
+**2. Обучение** (agent вкл):
 
 ```bash
 export DATASET_ID=<dataset_id>
@@ -63,7 +63,7 @@ python -m src.register_model \
   --for-triton
 ```
 
-В выводе будет `Triton ONNX model published: <id>` — запомните этот id.
+В выводе будет `Triton ONNX model published: <id>`.
 
 **4. Serving (Triton + HTTP):**
 
